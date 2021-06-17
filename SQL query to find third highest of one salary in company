@@ -1,0 +1,6 @@
+SELECT TOP 1 salary 
+FROM 
+    (SELECT TOP 3 salary 
+     FROM Table_Name 
+     ORDER BY salary DESC) AS Comp 
+ORDER BY salary ASC
